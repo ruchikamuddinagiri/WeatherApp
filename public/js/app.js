@@ -5,7 +5,7 @@ const msg1 = document.querySelector('#message-1')
 const msg2 = document.querySelector('#message-2')
 
 const apiFetch = function(address){
-    const url = 'http://localhost:3000/weather?address='
+    const url = '/weather?address='
     fetch(url+address).then((response) => {
     
     response.json().then((data)=>{

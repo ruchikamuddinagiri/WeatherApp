@@ -10,6 +10,7 @@ console.log(path.join(__dirname, '../public'))
 
 //create the express application
 const app = express() 
+const port = process.env.PORT || 3000
 
 const publicDirectoryPath = path.join(__dirname, '../public')
 const viewsDirectory = path.join(__dirname, '../templates/views')
@@ -95,6 +96,6 @@ app.get('*', (req, res)=>{
 
 })
 //set up the server at port 3000
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('The server is up')
 })
