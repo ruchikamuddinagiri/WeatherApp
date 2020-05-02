@@ -13,7 +13,7 @@ const forecast = (lat, lon, callback) =>{
                 callback(undefined, response.data.current.weather_descriptions[0] 
                         + '. It is '+response.data.current.temperature + '°C'+
                         '. The rainfall is '+response.data.current.precip
-                        +'%. Although, it does feel like '+ response.data.current.feelslike+'.')
+                        +'%. Although, it does feel like '+ response.data.current.feelslike+'°C. The humidity is '+response.data.current.humidity+'%.')
                         
             }
          })
